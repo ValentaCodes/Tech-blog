@@ -1,0 +1,34 @@
+<div class="dashboard_wrapper">
+    <div>
+        <h2>Welcome back {{name}}!</h2>
+    </div>
+{{#if posts}}
+<div>
+    <h3>Your posts</h3>
+        {{#each posts as |post|}}
+    <div class="single-card">
+        <h3>
+        {{post.title}}
+        </h3>
+        <p>
+        {{post.body}}
+        </p>
+        {{format_date date_created}}
+    </div>
+        {{/each}}
+</div>
+{{/if}}
+<form class="blog-form">
+<div class="new-blog">
+<h3>New post</h3>
+<p>What's on your mind?</p>
+<label for="blog-title">Title</label>
+<textarea  id="blog-title" cols="5" rows="5"></textarea>
+<label for="blog-body">Body</label>
+<textarea  id="blog-body" cols="60" rows="10"></textarea>
+</div>
+<button type="submit">Create post!</button>
+</form>
+</div>
+
+<script src="./js/post.js"></script>
