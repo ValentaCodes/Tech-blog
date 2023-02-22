@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const sequelize = new Sequelize(
   process.env.MYSQLDATABASE,
-  process.env.MYSQL_USER,
+  process.env.MYSQLUSER,
   process.env.MYSQLPASSWORD,
   {
     host: process.env.MYSQLHOST,
