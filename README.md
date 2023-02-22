@@ -19,15 +19,15 @@
 
 ## **Description**
 
-  A simple web app that allows developers to publish articles and comment on other developers posts as well.
+  A simple web app that allows developers to publish articles and comment on other developers blog posts.
 
 ## **Tools**
 
-  JavaScript, Express, MySQL 
+  JavaScript, Express, MySQL, Sequelize, Handlebars, HTML/CSS
 
 ## **Motivation**
 
-  To build my first full-stack webpage using authentication and cookies.
+  To build my first full-stack webpage using authentication, cookies, and Handlebars.
 
 ## **Installation**
   
@@ -36,7 +36,8 @@
 ## **Usage**
 
   n/a
-
+  visit site below
+  
 ## **Contribution**
 
   n/a
@@ -49,7 +50,9 @@
 
   Add your screenshots here:
 
-  ![ALT TEXT](URL)
+  ![Screenshot](./assets/Screen%20Shot%202023-02-21%20at%2011.34.24%20PM.png)
+  ![Screenshot](./assets/Screen%20Shot%202023-02-21%20at%2011.34.38%20PM.png)
+  ![Screenshot](./assets/Screen%20Shot%202023-02-21%20at%2011.34.58%20PM.png)
 
 ## **Links**
   
