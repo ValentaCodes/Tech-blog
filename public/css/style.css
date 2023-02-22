@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #041b15;
+  --sec-color: #136f63;
+  --third-color: #22aaa1;
+  --fourth-color: #4ce0d2;
+  --fifth-color: #84cae7;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(
+    to left,
+    var(--third-color),
+    var(--main-color)
+  );
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+nav a {
+  padding-left: 2rem;
+  color: white;
+}
+h1 a {
+  color: white;
+}
+
+header,
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.post-card {
+  border-radius: 12px;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  width: 30rem;
+  background-color: white;
+}
+.post-card a {
+  color: #041b15;
+}
+
+.single-card {
+  font-size: 20px;
+  border-radius: 12px;
+  justify-content: center;
+  margin-top: 5.5rem;
+  height: 22rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  width: 30rem;
+  background-color: white;
+}
+
+input {
+  display: flex;
+  height: 5rem;
+  width: 30rem;
+  border-radius: 12px;
+}
+
+.comment, .comments {
+  border-radius: 12px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.new-blog {
+  display: flex;
+  flex-direction: column;
+}
+.login-wrapper {
+  border: 2px black solid;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  background-color: var(--main-color);
+  margin-left: 28rem;
+  width: 35rem;
+  padding: 2rem;
+}
+
+#email-login, #password-login {
+  font-size: 20px;
+}
