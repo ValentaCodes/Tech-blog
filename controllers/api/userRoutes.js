@@ -11,7 +11,6 @@ router.post('/', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-
       res.status(200).json(userData);
     });
   } catch (error) {
@@ -19,6 +18,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+// Allows a user to login
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({
@@ -45,6 +45,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// allows a user to logout
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
@@ -55,6 +56,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
+// finds all users in DB with their posts and comments
 router.get('/', async (req, res) => {
   try {
     const userData = await User.findAll({
@@ -64,6 +66,5 @@ router.get('/', async (req, res) => {
   } catch (error) {
     res.status(500).json(error)
   }
-
 })
 module.exports = router;

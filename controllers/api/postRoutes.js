@@ -14,6 +14,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// Creates a new post
 router.post('/', async (req, res) => {
   try {
     const newPost = await Post.create({
@@ -26,7 +27,8 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.post('/:id', withAuth, async (req, res) => {
+// Creates a new comment on specific post // must be logged in
+router.post('/:id/comment', withAuth, async (req, res) => {
   try {
     const commentData = await Comment.create({
       ...req.body,
@@ -39,6 +41,7 @@ router.post('/:id', withAuth, async (req, res) => {
   }
 });
 
+// allows api to remove a post
 router.delete('/:id', async (req, res) => {
   try {
     const newPost = await Post.destroy({

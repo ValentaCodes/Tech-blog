@@ -22,7 +22,6 @@ body {
 
 a {
   text-decoration: none;
-  /* color: white; */
 }
 nav a {
   padding-left: 2rem;
@@ -67,7 +66,7 @@ nav {
   font-size: 20px;
   border-radius: 12px;
   justify-content: center;
-  margin-top: 5.5rem;
+  /* margin-top: 5rem; */
   height: 22rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
@@ -85,13 +84,24 @@ input {
   border-radius: 12px;
 }
 
-.comment, .comments {
+.comments {
+  border: 2px #041b15 solid;
+  width: 20rem;
+  height: 5rem;
   border-radius: 12px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #84cae7;
 }
-
+.new-comment {
+   border-radius: 12px;
+  margin-top: 1rem;
+  justify-content: center;
+  text-align: center;
+}
 .dashboard_wrapper {
   display: flex;
   flex-direction: column;
@@ -113,11 +123,13 @@ input {
   text-align: center;
   border-radius: 12px;
   background-color: var(--main-color);
-  margin-left: 28rem;
-  width: 35rem;
   padding: 2rem;
 }
-
+.dashboard-posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 #email-login, #password-login {
   font-size: 20px;
 }
